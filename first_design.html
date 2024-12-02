@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашка 21.2 первый макет</title>
+    <style>
+        .text-center {
+            text-align: center;
+        }
+
+        .info-container {
+            width: 250px;
+            background-color: MintCream;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .card-body {
+            color: black;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+    <link href="styles.css" rel="stylesheet">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div>
+        <h1 class="text-center">Главная</h1>
+        <h4 class="text-center">Вы находитесь на сайте, предназначенном для продажи товаров.</h4>
+    </div>
+    <div class="flex-container">
+        <div class="info-container">
+            <div class="card-header">
+                Товар 1
+            </div>
+            <div class="card-body">
+                <h1 class="card-title">$100</h1>
+                <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                <button type="button" class="btn btn-outline-primary">Купить</button>
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div class="card-header">
+                Товар 2
+            </div>
+            <div class="card-body">
+                <h1 class="card-title">$100</h1>
+                <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                <button type="button" class="btn btn-outline-primary">Купить</button>
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div class="card-header">
+                Товар 3
+            </div>
+            <div class="card-body">
+                <h1 class="card-title">$100</h1>
+                <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                <button type="button" class="btn btn-outline-secondary">Купить</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

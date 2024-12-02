@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашка 21.2 второй макет</title>
+    <style>
+        .text-center {
+            text-align: center;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Добавляем промежуток между карточками */
+        }
+
+        .card {
+            width: calc(25% - 40px); /* Ширина карточки с учетом отступов */
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавляем тень для карточки */
+            border-radius: 10px; /* Скругленные углы */
+            overflow: hidden; /* Скрываем выходящие за пределы контенты */
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd; /* Линия под изображением */
+        }
+
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div>
+        <h1 class="text-center">Каталог</h1>
+    </div>
+    <div class="flex-container">
+        <div class="card">
+            <img src="./images/фото_на_макет_html.jpg" class="card-img-top" alt="Thumbnail">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <button type="button" class="btn btn-outline-primary">Купить</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/фото_на_макет_html.jpg" class="card-img-top" alt="Thumbnail">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <button type="button" class="btn btn-outline-primary">Купить</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/фото_на_макет_html.jpg" class="card-img-top" alt="Thumbnail">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <button type="button" class="btn btn-outline-primary">Купить</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/фото_на_макет_html.jpg" class="card-img-top" alt="Thumbnail">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <button type="button" class="btn btn-outline-primary">Купить</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
